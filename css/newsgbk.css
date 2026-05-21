@@ -1,0 +1,171 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f8f9fa;
+  overflow-x: hidden; /* ⛔ penting: cegah gambar keluar layar */
+}
+
+/* ========================= NAVBAR MODERN ========================= */
+.custom-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.navbar-brand img {
+  height: 65px;
+  width: auto;
+}
+.navbar-nav .nav-link,
+.dropdown-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link {
+  color: #222 !important;
+  transition: 0.2s;
+  padding: 12px 16px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #005fa6 !important;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
+.dropdown-item {
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.dropdown-item:hover {
+  background: #f3f6fa;
+  color: #005fa6;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* =========================
+   BREADCRUMB AREA
+========================= */
+.bread_area {
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 0;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+}
+
+.breadcrumb > li + li:before {
+  content: "/";
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  background: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  overflow: hidden; /* ⛔ ini yang bikin gambar gak keluar */
+}
+
+/* TITLE */
+.page-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* IMAGE FIX (INI KUNCI UTAMA) */
+.image-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* ⛔ batasi biar gak gila gede */
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* TEXT */
+p {
+  text-align: justify;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* VIDEO */
+.embed-responsive {
+  margin-top: 10px;
+}
+
+.footer {
+  background: #111;
+  color: #ccc;
+  padding-top: 40px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* MAP */
+.footer iframe {
+  margin-top: 20px;
+  border: 0;
+}
+
+/* CONTAINER LIMIT (biar gak kelebaran) */
+.container {
+  max-width: 1100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+}

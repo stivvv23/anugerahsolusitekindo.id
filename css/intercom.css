@@ -1,0 +1,450 @@
+/* GLOBAL */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1140px;
+  width: 100%;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 74px;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 12px 15px;
+}
+
+.navbar-brand img {
+  height: 58px;
+  width: auto;
+  display: block;
+}
+
+.navbar-nav {
+  float: right;
+  margin-top: 12px;
+}
+
+.navbar-nav > li > a {
+  color: #222 !important;
+  font-size: 14px;
+  padding: 15px 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > .active > a {
+  color: #0a66b7 !important;
+  background: none !important;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   BREADCRUMB AREA
+========================= */
+.bread_area {
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 0;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+}
+
+.breadcrumb > li + li:before {
+  content: "/";
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.site-main {
+  padding: 40px 0 60px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 18px;
+  position: relative;
+}
+
+.page-title:after {
+  content: "";
+  width: 32px;
+  height: 3px;
+  background: #0a66b7;
+  display: block;
+  margin-top: 14px;
+}
+
+/* CONTENT */
+.entry {
+  margin-top: 25px;
+}
+
+.entry img {
+  display: block;
+}
+
+.entry p {
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+  color: #666;
+}
+
+/* DETAIL IMAGES */
+.detail-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.detail-images img {
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* VIDEO */
+.product-video {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* PRODUCT GALLERY */
+.product-gallery .thumbnail {
+  height: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-gallery .thumbnail img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar {
+  padding-left: 45px;
+  position: sticky;
+  top: 30px;
+}
+
+.widget h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 18px;
+  position: relative;
+}
+
+.widget h4:after {
+  content: "";
+  width: 32px;
+  height: 3px;
+  background: #0a66b7;
+  display: block;
+  margin-top: 14px;
+}
+
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li {
+  margin-bottom: 6px;
+}
+
+.widget ul li a {
+  display: block;
+  padding: 10px 16px;
+  color: #444;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.widget ul li.current a,
+.widget ul li a:hover {
+  background: #0a66b7;
+  color: #fff;
+}
+
+/* PRODUCT ITEM */
+.product-item {
+  margin-bottom: 40px;
+}
+
+.product-item span {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 0;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.product-item img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin-top: 5px;
+}
+
+/* DESCRIPTION */
+.product-desc {
+  margin-top: 30px;
+}
+
+.product-desc h4 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-desc p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #666;
+}
+
+/* FEATURE IMAGE */
+.feature-image img {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+}
+
+/* VIDEO */
+.video-box {
+  margin-top: 50px;
+}
+
+.video-box video {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page {
+  width: 100%;
+}
+
+.sidebar {
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .page.col-sm-9 {
+    width: 75%;
+  }
+
+  .sidebar.col-sm-3 {
+    width: 25%;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .page.col-sm-9,
+  .sidebar.col-sm-3 {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+
+/* IMAGE SIDEBAR */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* MAIN IMAGE */
+.main-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+/* VIDEO */
+.video-section video {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.slide img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 35px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background: #111;
+  color: #bbb;
+  margin-top: 40px;
+}
+
+.footer .container {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
+.footer h5 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  line-height: 1.9;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer iframe {
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  padding: 18px 0;
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+.page-title {
+  font-size: 30px;
+}
+
+.widget h4 {
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    float: none;
+    margin-top: 0;
+  }
+
+  .navbar-collapse {
+    border-top: none;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+  .entry p {
+    line-height: 1.8;
+  }
+
+  .topbar {
+    text-align: center;
+  }
+}

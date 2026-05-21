@@ -1,0 +1,177 @@
+/* GLOBAL */
+html,
+body {
+  background: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================= NAVBAR MODERN ========================= */
+.custom-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.navbar-brand img {
+  height: 65px;
+  width: auto;
+}
+.navbar-nav .nav-link,
+.dropdown-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link {
+  color: #222 !important;
+  transition: 0.2s;
+  padding: 12px 16px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #005fa6 !important;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
+.dropdown-item {
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.dropdown-item:hover {
+  background: #f3f6fa;
+  color: #005fa6;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* =========================
+   BREADCRUMB AREA
+========================= */
+.bread_area {
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 14px 0;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-size: 14px;
+}
+
+.breadcrumb > li + li:before {
+  content: "/";
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* MAIN CONTENT (INI YANG BIKIN PUTIH & RAPI) */
+.main-content {
+  background: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* TITLE */
+.page-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* KOLOM KIRI BIAR MIRIP DESIGN */
+.col-md-8 {
+  padding-right: 30px;
+}
+
+/* IMAGE (FIX BIAR KAYAK KIRI) */
+
+.image-wrapper {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* TEXT */
+p {
+  text-align: justify;
+}
+
+/* SIDEBAR (kalau nanti dipakai) */
+.sidebar {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: #ccc;
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* MAP */
+.footer iframe {
+  margin-top: 20px;
+  border: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+
+  .col-md-8 {
+    padding-right: 15px;
+  }
+}
